@@ -23,5 +23,30 @@ int main() {
 	return 0;
 }
 
+//(2)Заполните массив из N элементов случайными целыми числами в диапазоне 1..N так, чтобы в массив обязательно вошли все числа от 1 до N(постройте случайную перестановку).
+#include <iostream>
+using namespace std;
+int random_number(int n) {
+	return rand() % n + 1;
+}
+void print_array(int array[], int size) {
+	for (int i = 0; i < size; i++) {
+		cout << array[i] << " ";
+	}
+	cout << endl;
+}
+void random_array(int array[], int size) {
+	for (int i = 0; i < size; i++) {
+		array[i] = random_number(10);
+		int tmp = array[0];
+	}
+}
+int main() {
+	const int n = 10;
+	int a[n];
+	random_array(a, n);
+	print_array(a, n);
+	return 0;
 
+}
 
