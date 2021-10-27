@@ -33,6 +33,34 @@ void print_array(int array[], int size) {
 	for (int i = 0; i < size; i++) {
 		cout << array[i] << " ";
 	}
+
+//(3)Заполните массив случайными числами в диапазоне 1000.2000 и подсчитайте число элементов, у которых вторая с конца цифра – чётная.
+#include <iostream>
+#include <random>
+#include <ctime>
+#include <stdlib.h>
+using namespace std;
+void Scan_array(int array[], int size) {
+	for (int i = 0; i < size; i++) array[i] = rand() % 1001 + 1000;
+}
+
+void Print_array(int array[], int size) {
+	int c = 0;
+	for (int i = 0; i < size; i++) {
+		if ((array[i] / 10) % 2 == 0) { c++; };
+		cout << array[i] << " ";
+	}
+	cout << c;
+}
+
+int main() {
+	int const n = 10;
+	int array[n];
+	srand(time(0));
+	Scan_array(array, n);
+	Print_array(array, n);
+	return 0;
+}
 	cout << endl;
 }
 void random_array(int array[], int size) {
