@@ -58,10 +58,10 @@ int main() {
 	srand(time(0));
 	Scan_array3(array, n);
 	Print_array3(array, n);
-	cout <<endl<< "2zad^" << endl;
+	cout <<endl<< "3zad^" << endl;
 	random_array(a, n);
 	print_array(a, n);
-	cout << endl<<"3zad^";
+	cout << endl<<"2zad^";
 	return 0;
 }
 
